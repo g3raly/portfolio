@@ -1,0 +1,208 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/* Font-face for Style Script */
+@font-face {
+    font-family: "StyleScript-Regular";
+    src: url('fonts/Style_Script/StyleScript-Regular.ttf') format('truetype');
+}
+
+/* Font-face for Cormorant */
+@font-face {
+    font-family: "Cormorant";
+    src: url('fonts/Cormorant-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    font-family: "Cormorant", serif;
+    background-color: #f5e3d8;
+    margin: 0;
+    padding: 0;
+    color: #4d2d16;
+}
+/* Header Section */
+header {
+    font-family: "StyleScript-Regular";
+    font-size: 26px; /* Large heading */
+    background-color: #8c6239;
+    color: #ffe6cc;
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 5px solid #4d2d16;
+}
+
+header h1 {
+    font-family: "StyleScript-Regular";
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ffcc99;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffe6cc;
+}
+
+#homepage{
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#aboutText{
+	width: 70%;
+	height: 400px;
+	margin: 40px auto;
+	text-align: center;
+}
+
+#aboutText p img{
+	padding: 0px 40px;
+}
+.container{
+	width: 60%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+p{
+	text-align: left;
+	font-size: 30px;
+}
+
+img.portHPImg{
+	width: 400px;
+	height: auto;
+	padding: 10px;
+}
+
+h2{
+	height: 80px;
+	background-color: #8c6239;
+	color: #ffe6cc;
+	line-height: 80px;
+	margin: 40px 0px;
+	font-size: 36px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    text-align: center;
+    margin: 2em auto;
+}
+
+#portfolio img {
+    border: 2px solid #8c6239;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#portfolio img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio figure {
+    display: inline-block;
+    margin: 1em;
+    width: 150px;
+}
+
+/* Work Page Section */
+#homepageWork {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    text-align: center;
+}
+
+img.portHPImg {
+    width: 250px; /* Adjust width */
+    height: 250px; /* Uniform height */
+    object-fit: cover; /* Crops images uniformly */
+    margin: 10px; /* Add spacing between images */
+    display: inline-block; /* Ensures alignment */
+}
+
+/* Footer */
+footer {
+    background-color: #8c6239;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-top: 5px solid #4d2d16;
+}
+
+/* Social Media Icons */
+footer img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Button Styles */
+form input[type="submit"] {
+    background-color: #8c6239;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #4d2d16;
+}
+
+/* Table Styling */
+table {
+    margin: 2em auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #8c6239;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #8c6239;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
